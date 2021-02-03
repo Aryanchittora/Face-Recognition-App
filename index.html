@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1 class="btn btn-default heading">Face Recognition</h1>
+            <hr>
+
+            <p class="btn btn-primary subtitle">Model is trained to identify -</p>
+            <br><br>
+            <b class="people">
+                Father
+                <hr>
+                Mother
+                <hr>
+                Sister
+                <hr>
+                Me
+                <hr>           
+            </b>
+
+            <br>
+
+            <p style="font-family: cursive; font-size: 15px; color: steelblue;">Webcam -</p>
+            <div id="camera"></div>
+
+            <br>
+
+            <div id="result"></div>
+
+            <br>
+
+            <button onclick="take_photo()" class="btn btn-info">Capture Image</button>
+            <button onclick="identify()" class="btn btn-danger">Identify Image</button>
+
+            <br><br>
+
+            <h4 style="color: goldenrod;">Person - <span id="person"></span></h4>
+            <h4 style="color: goldenrod;">Accuracy - <span id="accuracy"></span></h4>
+        </center> 
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
